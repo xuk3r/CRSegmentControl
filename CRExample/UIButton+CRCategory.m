@@ -7,22 +7,19 @@
 //
 
 #import "UIButton+CRCategory.h"
+#import <objc/runtime.h>
 
 @implementation UIButton (CRCategory)
 
 - (UIButton *)btnMask
 {
-    UIButton *btn = [self viewWithTag:998];
-    if (!btn)
-    {
-        
-    }
+    UIButton *btn = objc_getAssociatedObject(self, @selector(btnMask));
     return btn;
 }
 
 - (void)setBtnMask:(UIButton *)btnMask
 {
-    btnMask.tag = 998;
+    objc_setAssociatedObject(self, @selector(btnMask), btnMask, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end

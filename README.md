@@ -1,4 +1,4 @@
 # CRSegmentControl
-和UISegmentControl类似，效果稍有不同
+和UISegmentedControl功能类似
 
 ![gif](https://github.com/a4101823/CRSegmentControl/blob/master/segmentview.gif)
