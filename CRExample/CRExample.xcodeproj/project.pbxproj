@@ -451,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CRExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xuk.CRExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CRExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xuk.CRExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,6 +535,7 @@
 				73C9FA211E6FB8CE001AB160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73C9FA221E6FB8CE001AB160 /* Build configuration list for PBXNativeTarget "CRExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +544,7 @@
 				73C9FA241E6FB8CE001AB160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73C9FA251E6FB8CE001AB160 /* Build configuration list for PBXNativeTarget "CRExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +553,7 @@
 				73C9FA271E6FB8CE001AB160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

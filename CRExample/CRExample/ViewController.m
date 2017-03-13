@@ -9,7 +9,9 @@
 #import "ViewController.h"
 #import "CRSegmentControl.h"
 
-@interface ViewController ()
+@interface ViewController ()<
+CRSegmentControlDelegate
+>
 
 @end
 
@@ -23,6 +25,8 @@
     segmentView.backgroundColor = [UIColor colorWithRed:0.2 green:0.4 blue:0.6 alpha:1];
     segmentView.tintColor = [UIColor whiteColor];
     segmentView.arrList = @[@"title1",@"title2",@"title3"];
+    segmentView.indexSelected = 2;
+    segmentView.delegate = self;
     [self.view addSubview:segmentView];
 }
 
@@ -30,6 +34,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Delegate
+
+- (void)crsegmentControl:(CRSegmentControl *)segmentControl selectedIndex:(NSInteger)index
+{
+    NSLog(@"%ld",(long)index);
 }
 
 
